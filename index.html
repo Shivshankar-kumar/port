@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-portfolio-website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <script src="https://kit.fontawesome.com/2f1ba192f1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <h1><span>S</span>hiva.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full-Stack Web Developer</p>
+                <h1>Hi, I'm <span>Shivshankar</span> <br> Kumar From Bihar</h1>
+            </div>
+        </div>
+    </div>
+    <!--------------------About section-------------------->
+    <div id="about">
+        <div id="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="IMG_20231109_215607_329.jpg" alt="my photos">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I am a passionate and motivated full-stack web developer with a solid foundation in both front-end and back-end technologies. Proficient in HTML, CSS, JavaScript, and eager to apply my skills to create user-friendly and efficient web applications. A fast learner with a keen eye for detail, I am dedicated to staying updated on industry trends and best practices. Excited to contribute my fresh perspective and technical skills to a dynamic development team."</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Front-End</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Learning</span><br>Web Development Training at PW Wallah</li>
+                            <li><span>2017 - 2019</span><br>Field work/Sales Employee at SVPS LTD</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - persuing</span><br>BCA from Subharti University Meerut Uttarpradesh</li>
+                            <li><span>2020</span><br>Intermediate from PDSK College Begusarai Bihar</li>
+                            <li><span>2018</span><br>Metric from SFMH School Begusarai Bihar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------Services------------------------------ -->
+
+    <div id="services">
+        <div id="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>As a web designer, I specialize in making awesome websites look and work great. I use my creativity to design layouts, choose cool colors, and pick stylish fonts.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Development</h2>
+                    <p> I'm an app developer, and I use the Java language to create cool and useful mobile applications. Java is like my superhero tool because it helps me build apps that work on many different devices, making them super versatile.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-video"></i>
+                    <h2>Content Creater</h2>
+                    <p> I'm a vlogger on YouTube, which means I make fun and interesting videos about my life, adventures, or things I'm passionate about. I grab my camera and share my experiences with you, like a digital diary but with lots of energy and excitement! Whether it's exploring cool places, trying out new stuff, or just chatting about things that matter to me.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <div id="portfolio">
+        <div id="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="pexels-tranmautritam-326503.jpg" alt="">
+                    <div class="layer">
+                        <h3>Our Website</h3>
+                        <p>I use my creativity to choose cool colors, nice fonts, and arrange everything so it's easy for you to use. Let's create something awesome together! </p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="pexels-photomix-company-230544.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p> Engaging content to make your social media pages look awesome. Whether it's Instagram, Twitter, or Facebook, I'm here to make sure your posts stand out and grab attention.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="pexels-nino-souza-1870438.jpg" alt="">
+                    <div class="layer">
+                        <h3>Channel on YouTube</h3>
+                        <p>I make vlog videos for you to watch. Whether it's college/traveling, vlogs, or cool stuff I love, I share it all on my channel. Join me on my YouTube journey,</p>
+                        <a href="https://www.youtube.com/@apnashankar"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- -----------Contact Us------------ -->
+
+    <div id="contact">
+        <div id="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> shivshankerkumar079@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> 7808871214</p>
+                    <div class="social-icon">
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="my CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="#" autocomplete="off">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Messsage" id="" rows="10" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">Copyright &#9400; Shiva. <i class="fa-solid fa-heart"></i> Made with by Easy Tutorials</div>
+    </div>
+
+
+    <!-- --------------javascript for tablinks(skills, experience, education)---------- -->
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+<!-- --------javscript for side bar-------------- -->
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
